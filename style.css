@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+    margin: 0px 2vw;
+    display: inline;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 20px 40px;
+    /* border: 2px solid black; */
+}
+
+.taskbar {
+    /* border: 2px solid black; */
+    margin-left: auto;
+}
+
+.container {
+    /* border: 2px solid black; */
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    top: 13vh;
+    left: 13vw;
+    background-image: url(images/stethoscope.png);
+    background-size: contain;
+}
+
+.heading {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: 800;
+    /* border: 1px solid black; */
+}
+
+.content {
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
+
+.content p {
+    color: gray;
+    font-weight: 500;
+}
+
+.container .bottom {
+    position: relative;
+    left: 30vw;
+}
+
+button {
+    font: 1em sans-serif;
+    color: #fff;
+    background-color: #20bc7e;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 10px 38px;
+}
+
+.container2 {
+    /* border: 2px solid black; */
+    width: 36vw;
+    height: 80vh;
+    margin-left: auto;
+}
+
+main {
+    display: flex;
+}
+
+.container2 .green {
+    width: 300px;
+    right: -100px;
+    position: relative;
+    bottom: 304px;
+    z-index: -2;
+}
+
+.container2 .doctor {
+    width: 400px;
+    z-index: -1;
+    position: relative;
+    float: right;
+}
+
+.mouse{
+    position: relative; 
+    left: 600px;
+}
+
+@media(max-width : 800px) {
+    nav img {
+        width: 90px;
+    }
+
+    ul li {
+        font-size: 0.7em;
+        margin: 0px 1.2vw;
+        position: relative;
+        bottom: 3px;
+    }
+    
+    main{
+        position: relative;
+        margin-top: -98px;
+    }
+    .heading{
+        font-size: 1.2em;
+    }
+    .container2 .doctor{
+        width: 300px;
+        position: relative;
+        top: 70px;
+    }
+    .container2 .green{
+        position: relative;
+        top: -234px;
+        right: 121px;
+    }
+    button{   
+        padding: 10px 20px;
+    }
+    .mouse{
+        position: absolute;
+        right: 10px;
+    }
+}

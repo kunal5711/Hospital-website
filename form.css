@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+    margin: 0px 2vw;
+    display: inline;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    margin: 20px 40px;
+}
+
+.taskbar{ 
+    /* border: 2px solid black; */
+    margin-left: auto;
+}
+
+form{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.9);
+    width: 310px;
+    height: 367px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto auto;
+    position: relative;
+    top: 86px;
+    border-radius: 12px;
+}
+
+.heading{
+    /* border: 1px solid black; */
+    font-size: 1.5em;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 34px;
+}
+
+button{
+    color: #fff;
+    background-color: #20bc7e;
+    padding: 10px 0px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+label{
+    font-weight: 600;
+}
+
+input{
+    background-color: white;
+    width: 248px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.textarea{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    height: 100px;
+    display: flex;
+}
+
+@media(max-width : 800px) {
+    nav img {
+        width: 90px;
+    }
+    .taskbar li {
+        font-size: 0.7em;
+        margin: 0px 1.2vw;
+        position: relative;
+        bottom: 3px;
+    }
+}

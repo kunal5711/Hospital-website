@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    list-style: none;
+    margin: 0px 2vw;
+    display: inline;
+    flex-wrap: wrap;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    margin: 20px 40px;
+}
+
+.taskbar{ 
+    /* border: 2px solid black; */
+    margin-left: auto;
+}
+
+main{
+    /* border: 2px solid black */
+    width: 41vw;
+    height: 29vh;
+    margin: 23vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.heading{
+    /* border: 1px solid blue; */
+    color: #20bc7e;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.content{
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    /* border: solid black 1px; */
+}
+
+.box1{
+    width: 9vw;
+    height: 9vh;
+    border-radius: 10px;
+    /* border: 2px grey solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+}
+.box2{
+    /* border: 2px grey solid; */
+    width: 9vw;
+    height: 9vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+}
+.box3{
+    /* border: 2px grey solid; */
+    width: 9vw;
+    height: 9vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+}
+
+h3{
+    color: #20bc7e;
+}
+
+@media(max-width : 576px) {
+    nav img {
+        width: 90px;
+    }
+    .taskbar li {
+        font-size: 0.7em;
+        margin: 0px 1.2vw;
+        position: relative;
+        bottom: 3px;
+    }
+    main{
+        width: 324px;
+        height: 330px;
+        margin-top: 64px;
+    }
+    .box1,.box2,.box3{
+        width: 100px;
+        height: 59px;
+        font-size: 0.8em;
+    }
+}
+
+@media(min-width: 576px) and (max-width : 1200px){
+    main{
+        width: 388px;
+        height: 309px;
+        margin-top: 64px;
+    }
+    .box1,.box2,.box3{
+        width: 100px;
+        height: 59px;
+        font-size: 0.9em;
+    }
+}
